@@ -8,3 +8,5 @@ Leads tracker: Use me to track leads for potential clients, ore customers on the
 
 Carousel_slider: A simple carousel_slider with HTML, CCS and JS.
 
+Responsive_pricing-cards: Showcase of supbscription-pricing-cards.
+

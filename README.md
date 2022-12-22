@@ -10,6 +10,7 @@ Reception_management_dashboard: A project representing the case of getting a web
 Leieforhold.no:
 I have seen locally, that each year a lot of people have issues with their appartment, their landlords, and their contracts in relation to beeing tennants. I wanted to make a website where I could display some of the most important information that if known by tennants, could help them solve a lot of their issues, and steer away from bad landlords.
 
+
 Smaller projects:
 Leads tracker: Use me to track leads for potential clients, ore customers on the web that could be of interest to your buissness.
 

@@ -1,6 +1,6 @@
 # javascriptProjects
 
-A collection of small projects to display practice and skills.
+A collection of projects to display practice and skills.
 
 Description of the projects:
 

@@ -2,8 +2,6 @@
 
 A collection of projects to display practice and skills.
 
-Description of the projects:
-
 Bigger projects:
 
 Reception_management_dashboard: A project representing the case of getting a webpage ordered from a customer company. This application allows the company to keep track of the emplyees, in and out of the office, and to schedule new deliveries to their customers.

@@ -30,7 +30,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid black;
   margin-bottom: -18px;
   z-index: 1;
-  background-color: #2c4c71;
+  background-color: #303030;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -38,7 +38,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .main-header {
   display: inline-block;
-  color: rgb(239, 227, 227);
+  color: rgb(254, 251, 251);
+  padding-top: 15px;
 }
 
 .header-text-container {
@@ -49,13 +50,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 12px;
-  color: rgb(239, 227, 227);
+  color: rgb(254, 251, 251);
+  padding: 10px;
 }
 
 .main {
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #5cacfa, white, #5cacfa) 
+  background-color: rgb(254, 251, 251);
 }
 
 .footer {

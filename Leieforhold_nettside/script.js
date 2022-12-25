@@ -28,6 +28,7 @@ let infoObjects = [];
 
 let infoPages = document.getElementsByClassName("info-page");
 let infoSection = document.getElementById("info-section");
+
 console.log(infoSection);
 
 for (let i = 0; i < infoPages.length; i++) {
@@ -38,4 +39,7 @@ for (let i = 0; i < infoPages.length; i++) {
 console.log(infoPages);
 console.log(infoObjects);
 
-
+$(".info-page").click(function () {
+  let currentID = $(this)[0].id;
+  console.log(currentID);
+});

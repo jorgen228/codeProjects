@@ -40,6 +40,12 @@ console.log(infoPages);
 console.log(infoObjects);
 
 $(".info-page").click(function () {
-  let currentID = $(this)[0].id;
-  console.log(currentID);
+  let currentPage = $(this)[0].id;
+  let currentId = currentPage.slice(-1);
+  console.log(currentId);
 });
+
+
+function updateInfo(index) {
+  
+}

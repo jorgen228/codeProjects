@@ -104,3 +104,17 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .info-page:active {
   background-color: rgb(191, 223, 250);
 }
+
+#info-section-parent {
+  position: relative;
+}
+
+#info-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 1vw;
+  z-index: 2;
+
+}
+

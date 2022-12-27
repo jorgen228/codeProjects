@@ -17,7 +17,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header, .main, .footer {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   display: flex; 
   flex-direction: column;
   flex: 1 100%;
@@ -26,11 +26,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-  border-radius: 0 0 20px 20px;
+  /* border-radius: 0 0 20px 20px; */
   border: 1px solid black;
-  margin-bottom: -18px;
+  /* margin-bottom: -18px; */
   z-index: 1;
-  background-color: #303030;
+  background-color: rgb(252, 80, 0);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -62,20 +62,24 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .footer {
   height: 100px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
   border: 1px solid rgb(60, 58, 58);
-  border-radius: 20px 20px 0 0;
+  /* border-radius: 20px 20px 0 0; */
   z-index: 1;
   justify-content: center;
   align-items: center;
-  background-color: rgb(51, 51, 52);
+  background-color: rgb(252, 80, 0);
+}
+
+.footer-text {
+  color: rgb(254, 251, 251);
 }
 
 .info-container {
   width: 100%;
   padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;

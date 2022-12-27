@@ -24,10 +24,12 @@ const Page4 = {
   third: "",
 };
 
-let infoObjects = [];
+const infoObjects = [];
 
-let infoPages = document.getElementsByClassName("info-page");
-let infoSection = document.getElementById("info-section");
+const infoPages = document.getElementsByClassName("info-page");
+const infoSection = document.getElementById("info-section");
+const infoText = document.getElementById("info-text");
+const backButton = document.getElementById("back-button");
 
 console.log(infoSection);
 
@@ -43,9 +45,22 @@ $(".info-page").click(function () {
   let currentPage = $(this)[0].id;
   let currentId = currentPage.slice(-1);
   console.log(currentId);
+  updateInfo(currentId);
+  console.log(infoObjects);
 });
 
-
 function updateInfo(index) {
-  
+  let currentObject = infoObjects[index];
+  console.log(currentObject);
+  infoSection.style.height = "75%";
+  infoSection.style.backgroundColor = "blue";
+  infoText.style.display = "";
+  backButton.style.display = "";
 }
+
+$("#back-button").click(function () {
+  infoSection.style.height = "";
+  infoSection.style.backgroundColor = "";
+  infoText.style.display = "none";
+  backButton.style.display = "none";
+})

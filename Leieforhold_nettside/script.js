@@ -56,11 +56,12 @@ function updateInfo(index) {
   infoSection.style.backgroundColor = "blue";
   infoText.style.display = "";
   backButton.style.display = "";
+  // infoSection.classList.add("active");
 }
 
 $("#back-button").click(function () {
-  infoSection.style.height = "";
-  infoSection.style.backgroundColor = "";
+  infoSection.style.height = 0;
+  infoSection.style.backgroundColor = none;
   infoText.style.display = "none";
   backButton.style.display = "none";
   currentObject = "";

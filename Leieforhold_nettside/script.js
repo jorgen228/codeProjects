@@ -24,7 +24,7 @@ const Page4 = {
   third: "",
 };
 
-const infoObjects = [];
+let infoObjects = [];
 
 const infoPages = document.getElementsByClassName("info-page");
 const infoSection = document.getElementById("info-section");
@@ -52,7 +52,7 @@ $(".info-page").click(function () {
 function updateInfo(index) {
   let currentObject = infoObjects[index];
   console.log(currentObject);
-  infoSection.style.height = "75%";
+  infoSection.style.height = "85%";
   infoSection.style.backgroundColor = "blue";
   infoText.style.display = "";
   backButton.style.display = "";
@@ -63,4 +63,6 @@ $("#back-button").click(function () {
   infoSection.style.backgroundColor = "";
   infoText.style.display = "none";
   backButton.style.display = "none";
+  currentObject = "";
+  console.log(currentObject);
 })

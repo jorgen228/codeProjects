@@ -71,3 +71,13 @@ $("#back-button").click(function () {
   currentObject = "";
   console.log(currentObject);
 });
+
+let fName = document.getElementById("fname");
+let email = document.getElementById("email");
+let message = document.getElementById("message");
+
+$("#submit-button").click(function () {
+  fName.value = "";
+  email.value = "";
+  message.value = "";
+});

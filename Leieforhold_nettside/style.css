@@ -125,7 +125,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 2;
   border-radius: 20px 20px 0 0;
   transition-property: height;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .info-section-child {
@@ -154,4 +154,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
 }
 
+em {
+  color: red;
+}
 

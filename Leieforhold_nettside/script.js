@@ -1,25 +1,25 @@
 const page0 = {
-  main: `<p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
+  main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",
   third: "",
 };
 const page1 = {
-  main: `<p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
+  main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",
   third: "",
 };
 const page2 = {
-  main: `<p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
+  main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",
   third: "",
 };
 const page3 = {
-  main: `<p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
+  main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",
   third: "",
 };
 const page4 = {
-  main: `<p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
+  main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",
   third: "",
 };

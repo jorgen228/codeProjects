@@ -73,5 +73,5 @@ $("#submit-button").click(function () {
   fName.value = "";
   email.value = "";
   message.value = "";
-  $('#live-toast').toast('show')
+  // $('#live-toast').toast('show')
 });

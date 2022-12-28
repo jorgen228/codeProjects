@@ -37,26 +37,19 @@ const infoSection = document.getElementById("info-section");
 const infoText = document.getElementById("info-text");
 const backButton = document.getElementById("back-button");
 
-console.log(infoSection);
 
 for (let i = 0; i < infoPages.length; i++) {
   infoPages[i].id = `info-page-${i}`;
   infoObjects.push(`page${i}`);
 }
 
-console.log(infoPages);
-console.log(infoObjects);
-
 $(".info-page").click(function () {
   let currentPage = $(this)[0].id;
   let currentId = currentPage.slice(-1);
-  console.log(currentId);
   updateInfo(currentId);
-  console.log(infoObjects);
 });
 
 function updateInfo(index) {
-  console.log(infoObjects[index]);
   infoSection.style.height = "85%";
   infoSection.style.backgroundColor = "blue";
   infoText.style.display = "";

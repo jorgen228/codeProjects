@@ -37,7 +37,6 @@ const infoSection = document.getElementById("info-section");
 const infoText = document.getElementById("info-text");
 const backButton = document.getElementById("back-button");
 
-
 for (let i = 0; i < infoPages.length; i++) {
   infoPages[i].id = `info-page-${i}`;
   infoObjects.push(`page${i}`);
@@ -70,8 +69,11 @@ let email = document.getElementById("email");
 let message = document.getElementById("message");
 
 $("#submit-button").click(function () {
+  $("#liveToast").toast("show");
   fName.value = "";
   email.value = "";
   message.value = "";
-  // $('#live-toast').toast('show')
+  setTimeout(function () {
+    $("#liveToast").toast("hide");
+  }, 3000);
 });

@@ -12,6 +12,6 @@ I have seen locally, that each year a lot of people have issues with their appar
 
 Smaller projects:
 
-Leads tracker: Use me as a chrome extention to track leads for potential clients, or customers on the web that could be of interest to your buissness.This tracker will help you save. 
+Leads tracker: Use me as a chrome extention to track leads for potential clients, or customers on the web that could be of interest to your buissness. This tracker will help you save URLs to pick up for later reaserch and possible coustemers profiles. 
 
 Responsive_pricing-cards: Showcase of supbscription-pricing-cards.

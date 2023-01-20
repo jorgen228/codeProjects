@@ -22,6 +22,7 @@ function displayTime() {
   if (seconds < 10) {
     seconds = `0${seconds}`;
   }
+  month += 1;
 
   clockElement.innerText = `${day} ${month} ${year} ${hour}:${minute}:${seconds}`;
 }
@@ -246,57 +247,63 @@ $("#out-btn").click(staffOut);
 $("#in-btn").click(staffIn);
 
 function staffOut() {
-  minutesAway = parseInt(prompt("How long will they be away in minutes?"));
-  while (isNaN(minutesAway)) {
-    minutesAway = parseInt(prompt("Please enter their leave in minutes only."));
+  if (currentObjects.length > 0) {
+    minutesAway = parseInt(prompt("How long will they be away in minutes?"));
+    while (isNaN(minutesAway)) {
+      minutesAway = parseInt(
+        prompt("Please enter their leave in minutes only.")
+      );
+    }
+    for (i = 0; i < currentObjects.length; i++) {
+      clearInterval(currentObjects[i].timerID);
+      currentObjects[i].status = "Out";
+
+      let clockString = "__";
+      if (minutesAway > 60) {
+        let hoursAway = Math.floor(minutesAway / 60);
+        minutesAwayTime = Math.floor(minutesAway % 60);
+        clockString = `${hoursAway}h ${minutesAwayTime}min`;
+      } else {
+        clockString = `${minutesAway} min`;
+      }
+      currentObjects[i].outTime = clockString;
+
+      let today = new Date().getTime();
+      let targetTime = minutesAway * 60000;
+
+      let timeGap = today + targetTime;
+      let returnString = "__";
+
+      let returnTime = new Date(timeGap);
+      let returnHour = returnTime.getHours();
+      let returnMinutes = returnTime.getMinutes();
+      if (returnMinutes < 10) {
+        returnMinutes = `0${returnMinutes}`;
+        returnString = `${returnHour}:${returnMinutes}`;
+      } else {
+        returnString = `${returnHour}:${returnMinutes}`;
+      }
+      if (returnHour < 10) {
+        returnHour = `0${returnHour}`;
+        returnString = `${returnHour}:${returnMinutes}`;
+      }
+      currentObjects[i].expectedReturnTime = returnString;
+      currentObjects[i].duration = Math.floor(minutesAway * 60);
+
+      currentObjects[i].estimateTime();
+      currentObjects[i].timerID = setInterval(
+        currentObjects[i].estimateTime.bind(currentObjects[i]),
+        1000
+      );
+    }
+
+    $(".selected").toggleClass("selected");
+
+    uppdateTable();
+    currentObjects = [];
+  } else {
+    alert("No employee selected!");
   }
-  for (i = 0; i < currentObjects.length; i++) {
-    clearInterval(currentObjects[i].timerID);
-    currentObjects[i].status = "Out";
-
-    let clockString = "__";
-    if (minutesAway > 60) {
-      let hoursAway = Math.floor(minutesAway / 60);
-      minutesAwayTime = Math.floor(minutesAway % 60);
-      clockString = `${hoursAway}h ${minutesAwayTime}min`;
-    } else {
-      clockString = `${minutesAway} min`;
-    }
-    currentObjects[i].outTime = clockString;
-
-    let today = new Date().getTime();
-    let targetTime = minutesAway * 60000;
-
-    let timeGap = today + targetTime;
-    let returnString = "__";
-
-    let returnTime = new Date(timeGap);
-    let returnHour = returnTime.getHours();
-    let returnMinutes = returnTime.getMinutes();
-    if (returnMinutes < 10) {
-      returnMinutes = `0${returnMinutes}`;
-      returnString = `${returnHour}:${returnMinutes}`;
-    } else {
-      returnString = `${returnHour}:${returnMinutes}`;
-    }
-    if (returnHour < 10) {
-      returnHour = `0${returnHour}`;
-      returnString = `${returnHour}:${returnMinutes}`;
-    }
-    currentObjects[i].expectedReturnTime = returnString;
-    currentObjects[i].duration = Math.floor(minutesAway * 60);
-
-    currentObjects[i].estimateTime();
-    currentObjects[i].timerID = setInterval(
-      currentObjects[i].estimateTime.bind(currentObjects[i]),
-      1000
-    );
-  }
-
-  $(".selected").toggleClass("selected");
-
-  uppdateTable();
-  currentObjects = [];
 }
 
 function countDownTimer() {
@@ -318,19 +325,23 @@ function countDownTimer() {
 // Staff in functionality
 
 function staffIn() {
-  for (i = 0; i < currentObjects.length; i++) {
-    clearInterval(currentObjects[i].timerID);
-    currentObjects[i].status = "Out";
-    currentObjects[i].status = "In";
-    currentObjects[i].outTime = "__";
-    currentObjects[i].duration = 0;
-    currentObjects[i].current = `00:00:00`;
-    currentObjects[i].expectedReturnTime = "__";
-  }
-  $(".selected").toggleClass("selected");
+  if (currentObjects.length > 0) {
+    for (i = 0; i < currentObjects.length; i++) {
+      clearInterval(currentObjects[i].timerID);
+      currentObjects[i].status = "Out";
+      currentObjects[i].status = "In";
+      currentObjects[i].outTime = "__";
+      currentObjects[i].duration = 0;
+      currentObjects[i].current = `00:00:00`;
+      currentObjects[i].expectedReturnTime = "__";
+    }
+    $(".selected").toggleClass("selected");
 
-  uppdateTable();
-  currentObjects = [];
+    uppdateTable();
+    currentObjects = [];
+  } else {
+    alert("No emplyee selected!");
+  }
 }
 
 function uppdateTable() {

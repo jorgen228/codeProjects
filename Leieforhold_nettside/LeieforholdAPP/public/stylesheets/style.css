@@ -41,16 +41,24 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 15px;
 }
 
+.second-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-text-container {
   display: inline-block;
+  padding: 20px;
 }
 
 .header-text {
   font-style: italic;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
   color: rgb(250, 250, 250);
   padding: 10px;
+  font-family: minimal;
 }
 
 .main {
@@ -91,22 +99,22 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* text-align: center; */
   border: 1px solid black;
   border-radius: 5px;
-  max-width: 350px;
+  max-width: 500px;
   padding: 30px;
   background-color: rgb(252, 102, 32);
   text-align: center;
 }
 
 #fname {
-  width: 200px;
+  width: 300px;
 }
 
 #email {
-  width: 200px;
+  width: 300px;
 }
 
 #message {
-  width: 200px;
+  width: 300px;
 }
 
 #submit-button {

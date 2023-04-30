@@ -31,12 +31,15 @@
         <div>
           <h1 class="main-header">Leieforhold.no</h1>
         </div>
-        <div class="header-text-container">
-          <p class="header-text">
-            «Vet du at depositum ved leieforhold skal stå på en egen konto som
-            ikke er tilgjengelig for uttak? Eller at leiekontrakt skal
-            spesifisere hvordan leieforholdet skal avsluttes?»
-          </p>
+        <div class="second-header-container">
+          <div class="header-text-container">
+            <p class="header-text">
+              «Vet du at depositum ved leieforhold skal stå på en egen konto som
+              ikke er tilgjengelig for uttak? Eller at leiekontrakt skal
+              spesifisere hvordan leieforholdet skal avsluttes?»
+            </p>
+          </div>
+          <div class="svg-container"><%- include("partials/svg.ejs") %></div>
         </div>
       </div>
       <div class="main">
@@ -69,7 +72,9 @@
       </div>
       <div class="footer">
         <div class="footer-text-container">
-          <h4 class="footer-text">Er det noe du savner på denne siden?</h4>
+          <h4 class="footer-text">
+            Er det noe du savner på denne siden? Send oss en melding
+          </h4>
         </div>
         <div class="form-div">
           <form>
@@ -80,7 +85,7 @@
               name="fname"
             /><br /><br />
             <input
-              placeholder="email:"
+              placeholder="Epost:"
               type="email"
               id="email"
               name="email"
@@ -95,6 +100,12 @@
             ><br /><br />
           </form>
           <button id="submit-button">Submit</button>
+        </div>
+        <div class="footer-text-container">
+          <h4 class="footer-text">
+            Denne nettsiden er et hobbyprosjekt. Vi tar forbehold om mulige feil
+            eller utdatert innhold.
+          </h4>
         </div>
       </div>
     </div>

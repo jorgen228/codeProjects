@@ -23,7 +23,6 @@ const page4 = {
   second: "",
   third: "",
 };
-
 const page5 = {
   main: `<p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Non, id explicabo eligendi, ratione molestiae placeat labore deserunt nihil omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem rerum voluptate dolorem.</p>`,
   second: "",

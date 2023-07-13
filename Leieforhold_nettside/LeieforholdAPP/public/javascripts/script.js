@@ -49,7 +49,7 @@ $(".info-page").click(function () {
 
 function updateInfo(index) {
   infoSection.style.height = "85%";
-  infoSection.style.backgroundColor = "blue";
+  infoSection.style.backgroundColor = "#326789";
   infoText.style.display = "";
   backButton.style.display = "";
 }
